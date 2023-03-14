@@ -9,10 +9,10 @@ Braulio Iván Estrada Alfonso. Javascript Braulio.Estrada@itksquare.edu.mx
 Alexis Guevara Aramburo. Javascript alexis.guevara@itksquare.edu.mx
 ## Assignation 
 
-Please use this format for your User Stories assignations
+User Stories assignations
 
 | User Stories     | Alexis Guevara | Braulio Estrada |
-| ---------------- | :--: | ---: |
+| ---------------- | :--: | :---: |
 | As a user, whenever I navigate to the website and see an empty grid with the option to let the user set up the initial configuration. |  X   |      |
 | If the game is paused I can resume it |  X    |     |
 | I can clear the board |  X   |      |
