@@ -5,7 +5,9 @@ Welcome! This repo contains helpful information and starter files for your proje
 ## Team members
 
 Write here the names, career path and email of the members of the team
+
 Braulio Iván Estrada Alfonso. Javascript Braulio.Estrada@itksquare.edu.mx
+
 Alexis Guevara Aramburo. Javascript alexis.guevara@itksquare.edu.mx
 ## Assignation 
 
