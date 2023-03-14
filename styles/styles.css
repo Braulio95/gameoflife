@@ -1,0 +1,14 @@
+
+/* Stroke the grid */
+td {
+    border: rgba(0, 0, 0, 0.2) solid 1px;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: black;
+    color: white;
+}
