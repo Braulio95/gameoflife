@@ -14,8 +14,12 @@ Please use this format for your User Stories assignations
 | User Stories     | Alexis Guevara | Braulio Estrada |
 | ---------------- | :--: | ---: |
 | As a user, whenever I navigate to the website and see an empty grid with the option to let the user set up the initial configuration. |  X   |      |
-| Add US text here |      |    X |
-| Add US text here |  X   |      |
+| If the game is paused I can resume it |  X    |     |
+| I can clear the board |  X   |      |
+| I can click a 'Randomize' button that will generate an initial configuration |    |   X   |
+| I can see the amount of generation has passed since the start of the game |    |   X   |
+| I can click a button that would set the game back to the initial state |    |   X   |
+
 
 # Live demo
 
