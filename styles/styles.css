@@ -4,10 +4,16 @@ td {
     border: rgba(0, 0, 0, 0.2) solid 1px;
 }
 
+header, #boardContainer, .btnContainer {
+    display: flex;
+    justify-content: center;
+}
+
 .btn {
     cursor: pointer;
 }
 
+/* Change color when mouse pass over the button*/
 .btn:hover {
     background: black;
     color: white;
