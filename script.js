@@ -94,6 +94,19 @@ let firstFrame = () => {
 	}
 }
 
+// Clear the board
+let clean = () => {
+	complexity = [];
+	for (let x = 0; x < cols; x++) {
+		for (let y = 0; y < rows; y++) {
+			// Get the div cell id
+			let cell = document.getElementById(`cell-${x + "-" + y}`);
+			// Change to dead-white
+			cell.style.background = "";
+		}
+	}
+}
+
 // Count alive cells
 let countAlive = (x, y) => {
 	let alive = 0;
@@ -120,11 +133,13 @@ let otherPics = () => {
 	for (let x in p_complexity) {
 		for (let y in p_complexity[x]) {
 			try {
+				// Get cell position
 				let cell = document.getElementById(`cell-${x + "-" + y}`);
 				if (!pic[x]) {
 					pic[x] = [];
 					verifyValues[x] = [];
 				}
+				// Cell is alive
 				pic[x][y] = cell.style.background == "black";
 				calcComplexity(Number(x), Number(y));
 			} catch (e) { }
@@ -132,7 +147,6 @@ let otherPics = () => {
 	}
 	p_complexity = [];
 }
-
 
 let frame = () => {
 	p_complexity = JSON.parse(JSON.stringify(complexity));
