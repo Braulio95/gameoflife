@@ -66,6 +66,17 @@ let changeState = (x, y) => {
 	}
 }
 
+let random = () => {
+	complexity = []
+	for (let x = 0; x < cols; x++) {
+		for (let y = 0; y < rows; y++) {
+			if (Math.random() < 0.2) {
+				changeState(x, y);
+			}
+		}
+	}
+}
+
 // Calcutate complexity of where is the cell
 let calcComplexity = (x, y) => {
 	if (pic[x][y]) {
