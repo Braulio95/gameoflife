@@ -65,6 +65,16 @@ let changeState = (x, y) => {
 		cell.style.background = ""; // Stays dead
 	}
 }
+//ading function that generates a random pattern
+let random = () => {
+	for (let x = 0; x < cols; x++) { //nested fors iterate through all the rows and columns of the grid
+		for (let y = 0; y < rows; y++) {
+			if (Math.random() < 0.2) { //if this random condition is true then state of each individual cell will change
+				changeState(x, y);
+			}
+		}
+	}
+}
 
 // Calcutate complexity of where is the cell
 let calcComplexity = (x, y) => {
