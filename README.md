@@ -1,10 +1,9 @@
+
 # GameofLife
 
 Welcome! This repo contains helpful information and starter files for your project, just fork this repo and go to town!
 
 ## Team members
-
-Write here the names, career path and email of the members of the team
 
 Braulio Iván Estrada Alfonso. Javascript Braulio.Estrada@itksquare.edu.mx
 
@@ -22,10 +21,10 @@ User Stories assignations
 | I can see the amount of generation has passed since the start of the game |    |   X   |
 | I can click a button that would set the game back to the initial state |    |   X   |
 
-
 # Live demo
 
 Please include here a link to your [live demo](url_here_please)
 
 # Requeriments
 You need to use the same version of node that we use in class and no external dependices can be used. This means no frameworks or libraries.
+
