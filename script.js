@@ -4,6 +4,7 @@ let rows = 50;
 let cols = 50;
 let lado = 10;
 
+
 // Initial play state on false
 let play = false;
 
@@ -13,6 +14,10 @@ let pic = [];
 let complexity = [];
 let p_complexity = [];
 let verifyValues = [];
+
+//Setting variables for the score
+let level = 0;
+let scoreboard = document.getElementById("score");
 
 // Function to play and pause
 let playGame = () => {
@@ -173,6 +178,8 @@ let frame = () => {
 // Next generation of cells
 let nextState = () => {
 	frame();
+	level += 1;
+	scoreboard.innerText = "Generation: " + level;
 	for (const x in complexity) {
 		for (const y in complexity[x]) {
 			try {
