@@ -111,7 +111,21 @@ let firstFrame = () => {
 
 // Clear the board
 let clean = () => {
+	for (let x = 0; x < cols; x++) {
+		for (let y = 0; y < rows; y++) {
+			// Get the div cell id
+			let cell = document.getElementById(`cell-${x + "-" + y}`);
+			// Change to dead-white
+			cell.style.background = "";
+		}
+	}
+}
+
+// Clear the board
+let reset = () => {
 	complexity = [];
+	level = 0;
+	scoreboard.innerText = "Generation: " + level;
 	for (let x = 0; x < cols; x++) {
 		for (let y = 0; y < rows; y++) {
 			// Get the div cell id
