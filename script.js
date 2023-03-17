@@ -63,8 +63,8 @@ let changeState = (x, y) => {
 	// Obtain id from the selected cell
 	let cell = document.getElementById(`cell-${x + "-" + y}`);
 	// Change to black if cell is white (dead)
-	if (cell.style.background != "black") {
-		cell.style.background = "black";
+	if (cell.style.background != "rgb(6, 44, 67)") {
+		cell.style.background = "rgb(6, 44, 67)";
 	} 
 	else {
 		cell.style.background = ""; // Stays dead
@@ -105,7 +105,7 @@ let firstFrame = () => {
 		for (let y = 0; y < rows; y++) {
 			let cell = document.getElementById(`cell-${x + "-" + y}`);
 			// Clone the current state
-			pic[x][y] = cell.style.background == "black";
+			pic[x][y] = cell.style.background == "rgb(6, 44, 67)";
 			calcComplexity(x, y);
 		}
 	}
@@ -171,7 +171,7 @@ let otherPics = () => {
 					verifyValues[x] = [];
 				}
 				// Cell is alive
-				pic[x][y] = cell.style.background == "black";
+				pic[x][y] = cell.style.background == "rgb(6, 44, 67)";
 				calcComplexity(Number(x), Number(y));
 			} catch (e) { }
 		}
@@ -216,7 +216,7 @@ let nextState = () => {
 				else {
 					// We evaluate if cell can born, pnly if have 3 neighbors
 					if (alive == 3){
-						cell.style.background = "black"
+						cell.style.background = "rgb(6, 44, 67)"
 					}
 				}
 			} catch (e) { }
