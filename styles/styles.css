@@ -1,20 +1,62 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body{
+    width: 100vw;
+    background-color: rgb(85, 145, 169)
+}
+main{
+    height: min-content;
+    display: flex;
+    background-color: rgb(206,215,224);
+}
+header{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgb(5, 69, 105);
+    color: white;
+    font-weight: 700;
+    box-shadow: 5px 2px 2px grey;
+}
+#boardContainer{
+    margin: 0 auto;
+    padding: 5%;
+}
+.btnContainer{
+    display: flex;
+    padding: 2%;
+    background-color: rgb(85, 145, 169)
+}
 /* Stroke the grid */
 td {
     border: rgba(0, 0, 0, 0.2) solid 1px;
 }
 
-header, #boardContainer, .btnContainer {
-    display: flex;
-    justify-content: center;
-}
 
-.btn {
-    cursor: pointer;
-}
+
 
 /* Change color when mouse pass over the button*/
 .btn:hover {
-    background: black;
+    background-color: rgb(5, 69, 105);
     color: white;
+    border: 2px solid white;
+}
+/*Styles to the buttons*/
+button {
+    margin: 16px;
+    width: 10%;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 5px 2px 2px grey;
+    font-weight: bolder;
+    font-size: 100%;
+    cursor: pointer;
+    border: none;
+    
+}
+button, h2{
+    margin: 0 auto;
+    color: rgb(6, 44, 67);
 }
